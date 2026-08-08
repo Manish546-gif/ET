@@ -20,19 +20,19 @@ const HOVER_TEXT_COLOR = "#ffffff";
 const HEADING_LINES = ["Innovation-driven", "digital studio", "tech agency"];
 const SERVICES = [
   {
-    num: "2",
+    num: "1",
     title: ["Dashboard", "Design"],
     desc: "Built to decode complexity, our dashboards transform data into elegant and intuitive interfaces.",
     image: image2,
   },
   {
-    num: "3",
+    num: "2",
     title: ["Web & App", "Design"],
     desc: "Crafted for clarity and growth, our web and app experiences are designed to engage and scale seamlessly.",
     image: image3,
   },
   {
-    num: "4",
+    num: "3",
     title: ["Branding", "Identity"],
     desc: "From strategy and messaging to visual identity, each brand is designed to be scalable, sustainable, and impactful across every digital platform.",
     image: image4,
