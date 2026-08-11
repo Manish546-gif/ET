@@ -66,11 +66,13 @@ const Navbar = () => {
         <div className='hidden h-17 grid-cols-[.20fr_2fr_1.3fr] md:grid'>
           <div className='flex items-center border-r border-black/30 px-10'>
             <button
-              onClick={() => scrollToSection('home')}
+              onClick={() => scrollToSection('top')}
               className=' inline-flex items-center gap-3'
               aria-label='Go to home page'
             >
-              <span className='font-["Germania_One"] text-3xl font-medium leading-none'>ET</span>
+              <span className='font-["Germania_One"] text-3xl font-medium leading-none'>
+                ET<span className='text-[#b84a2d]'>.</span>
+              </span>
             </button>
           </div>
 
@@ -98,13 +100,13 @@ const Navbar = () => {
               >
                 <button
                   onClick={() => scrollToSection(item.sectionId)}
-                  className='flex flex-col justify-center gap-0.5 text-left w-full'
+                  className='group flex flex-col justify-center gap-0.5 text-left w-full'
                 >
-                  <span className='text-[11px] tracking-tight'>{item.meta}</span>
+                  <span className='text-[11px] tracking-tight transition-colors duration-200 group-hover:text-[#b84a2d]'>{item.meta}</span>
                   <span className='flex items-center justify-between text-2xl leading-none tracking-[-0.015em]'>
                     <motion.span className='relative block h-[1em] overflow-hidden'>
                       <motion.span
-                        className='block'
+                        className='block text-[#1a1a1a] transition-colors duration-200 group-hover:text-[#b84a2d]'
                         animate={{
                           y: hoveredItem === item.label ? -24 : 0,
                         }}
@@ -113,7 +115,7 @@ const Navbar = () => {
                         {item.label}
                       </motion.span>
                       <motion.span
-                        className='absolute left-0 top-full block'
+                        className='absolute left-0 top-full block text-[#b84a2d]'
                         animate={{
                           y: hoveredItem === item.label ? -24 : 0,
                         }}
@@ -122,7 +124,7 @@ const Navbar = () => {
                         {item.label}
                       </motion.span>
                     </motion.span>
-                    <motion.span className='relative block w-[0.8em] overflow-hidden text-xl' aria-hidden='true'>
+                    <motion.span className='relative block w-[0.8em] overflow-hidden text-xl text-[#b84a2d]' aria-hidden='true'>
                       <motion.span
                         className='block'
                         animate={{
@@ -151,11 +153,11 @@ const Navbar = () => {
 
           <div className='flex h-16 items-center justify-between px-5 md:hidden'>
           <button
-            onClick={() => scrollToSection('home')}
+            onClick={() => scrollToSection('top')}
             aria-label='Go to home page'
             className=' font-["Germania_One"] text-3xl leading-none'
           >
-            ET
+            ET<span className='text-[#b84a2d]'>.</span>
           </button>
 
           <nav className=' flex items-center gap-4 text-xs font-medium' aria-label='Mobile navigation'>
@@ -169,7 +171,7 @@ const Navbar = () => {
       </div>
 
       <div className='absolute bottom-0 left-0 h-[0.06rem] w-full bg-white/20'>
-        <div className='h-full origin-left bg-black/85 transition-transform duration-150 ease-out' style={progressStyle} />
+        <div className='h-full origin-left bg-[#b84a2d] transition-transform duration-150 ease-out' style={progressStyle} />
       </div>
     </header>
   )

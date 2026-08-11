@@ -115,11 +115,11 @@ const AboutLanding = () => {
               <h2 className='font-serif text-3xl  leading-none tracking-[-0.03em] md:text-5xl'>
                 {project.title}
               </h2>
-              <span className='font-["Passion_One"] text-3xl  leading-none md:text-5xl'>{project.id}</span>
+              <span className='font-["Passions_Conflict"] text-4xl leading-none text-[#b84a2d] md:text-6xl'>{project.id}</span>
             </div>
 
-            <div className='mt-6 flex flex-col items-center gap-6 md:mt-30'>
-              <div className='flex w-full max-w-md items-center justify-between text-[0.64rem] font-semibold tracking-[0.16em] text-[#2d2d2d]'>
+              <div className='mt-6 flex flex-col items-center gap-6 md:mt-30'>
+              <div className='flex w-full max-w-md items-center justify-between text-[0.64rem] font-semibold tracking-[0.16em] text-[#b84a2d]'>
                 <span>{project.leftLabel}</span>
                 <span>{project.rightLabel}</span>
               </div>

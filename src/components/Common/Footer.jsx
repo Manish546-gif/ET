@@ -50,7 +50,7 @@ const Divider = () => (
 const ColLabel = ({ children }) => (
   <p style={{
     margin: '0 0 22px', fontSize: '0.58rem', fontWeight: 700,
-    letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a30',
+    letterSpacing: '0.28em', textTransform: 'uppercase', color: '#b84a2d',
   }}>
     {children}
   </p>
@@ -77,7 +77,7 @@ const UnderlineLink = ({ children, href, onClick, dim = false, style = {} }) => 
       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
       style={{
         position: 'absolute', bottom: -3, left: 0, right: 0,
-        height: '1px', background: '#1a1a1a', transformOrigin: 'left',
+        height: '1px', background: '#b84a2d', transformOrigin: 'left',
       }}
     />
   </motion.a>
@@ -105,11 +105,11 @@ const Marquee = () => {
             <span style={{
               fontSize: '0.68rem', fontWeight: 700,
               letterSpacing: '0.22em', textTransform: 'uppercase',
-              color: i % 2 === 0 ? '#1a1a1a' : '#1a1a1a30',
+              color: i % 2 === 0 ? '#1a1a1a' : '#b84a2d',
             }}>
               {t}
             </span>
-            <span style={{ color: '#1a1a1a20' }}>
+            <span style={{ color: '#b84a2d80' }}>
               <IconDot size={4} />
             </span>
           </span>
@@ -145,7 +145,7 @@ const MainGrid = ({ isInView, isMobile }) => (
     {/* Brand column */}
     <motion.div variants={itemVariants}>
       <motion.button
-        onClick={() => scrollToSection('home')}
+        onClick={() => scrollToSection('top')}
         style={{
           background: 'none', border: 'none', padding: 0, cursor: 'pointer',
           fontFamily: "'Germania One', serif",
@@ -181,8 +181,8 @@ const MainGrid = ({ isInView, isMobile }) => (
               letterSpacing: '0.04em',
             }}
             whileHover={{
-              borderColor: '#1a1a1a50',
-              color: '#1a1a1a',
+              borderColor: '#b84a2d',
+              color: '#b84a2d',
               y: -2,
             }}
             transition={{ duration: 0.2 }}
@@ -295,7 +295,7 @@ const BottomBar = ({ isInView, isMobile }) => (
           letterSpacing: '0.18em', textTransform: 'uppercase',
           color: '#1a1a1a50', cursor: 'pointer', fontFamily: 'inherit',
         }}
-        whileHover={{ borderColor: '#1a1a1a50', color: '#1a1a1a', y: -2 }}
+        whileHover={{ borderColor: '#b84a2d', color: '#b84a2d', y: -2 }}
         transition={{ duration: 0.2 }}
       >
         Back to top

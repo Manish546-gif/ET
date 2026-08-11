@@ -202,7 +202,7 @@ const ContactSection = () => {
               marginBottom: 20,
               fontSize: '0.62rem', fontWeight: 700,
               letterSpacing: '0.28em', textTransform: 'uppercase',
-              color: '#1a1a1a70'
+              color: '#b84a2d'
             }}>
               Hit Us Up
             </motion.p>
@@ -218,14 +218,14 @@ const ContactSection = () => {
             }}>
               Skip the<br />small talk.<br />
               <span style={{ position: 'relative', display: 'inline-block' }}>
-                Let's cook.
+                Let&apos;s <span style={{ fontFamily: "'Passions Conflict', cursive", color: '#b84a2d', fontSize: '1.15em' }}>cook.</span>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={isInView ? { scaleX: 1 } : {}}
                   transition={{ duration: 0.9, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
                   style={{
                     position: 'absolute', bottom: 2, left: 0, right: 0, height: 3,
-                    background: '#1a1a1a', transformOrigin: 'left'
+                    background: '#b84a2d', transformOrigin: 'left'
                   }}
                 />
               </span>
@@ -314,7 +314,7 @@ const ContactSection = () => {
                   transition={{ type: 'spring', stiffness: 300, damping: 20, delay: 0.2 }}
                   style={{
                     width: 64, height: 64, borderRadius: '50%',
-                    background: '#1a1a1a', display: 'flex',
+                    background: '#b84a2d', display: 'flex',
                     alignItems: 'center', justifyContent: 'center',
                     marginBottom: 24
                   }}
@@ -337,7 +337,7 @@ const ContactSection = () => {
                     textTransform: 'uppercase', cursor: 'pointer', color: '#1a1a1a',
                     fontFamily: 'inherit', transition: 'background 0.2s, color 0.2s'
                   }}
-                  whileHover={{ background: '#1a1a1a', color: '#fff' }}
+                  whileHover={{ background: '#b84a2d', color: '#fff' }}
                 >
                   Send another
                 </motion.button>
@@ -362,7 +362,7 @@ const ContactSection = () => {
                         display: 'block', marginBottom: 10,
                         fontSize: '0.62rem', fontWeight: 700,
                         letterSpacing: '0.22em', textTransform: 'uppercase',
-                        color: focused === key ? '#1a1a1a' : '#1a1a1a60',
+                        color: focused === key ? '#b84a2d' : '#1a1a1a60',
                         transition: 'color 0.2s'
                       }}>
                         {label}
@@ -378,7 +378,7 @@ const ContactSection = () => {
                         style={{
                           width: '100%', boxSizing: 'border-box',
                           background: 'transparent', border: 'none',
-                          borderBottom: `1.5px solid ${focused === key ? '#1a1a1a' : '#1a1a1a22'}`,
+                          borderBottom: `1.5px solid ${focused === key ? '#b84a2d' : '#1a1a1a22'}`,
                           padding: '10px 0',
                           fontSize: '1rem', fontWeight: 300,
                           color: '#1a1a1a', outline: 'none',
@@ -413,9 +413,9 @@ const ContactSection = () => {
                             display: 'flex', flexDirection: 'column',
                             justifyContent: 'space-between',
                             height: 120, padding: '14px 16px',
-                            border: isSelected ? '1.5px solid #1a1a1a' : '1px solid #1a1a1a18',
+                            border: isSelected ? '1.5px solid #b84a2d' : '1px solid #1a1a1a18',
                             borderRadius: 10,
-                            background: isSelected ? '#1a1a1a05' : '#ffffff',
+                            background: isSelected ? '#b84a2d08' : '#ffffff',
                             cursor: 'pointer', textAlign: 'left',
                             transition: 'border-color 0.25s, background 0.25s'
                           }}
@@ -428,8 +428,8 @@ const ContactSection = () => {
                               fontSize: '0.55rem', fontWeight: 700,
                               letterSpacing: '0.12em', textTransform: 'uppercase',
                               padding: '2px 7px', borderRadius: 100,
-                              background: isSelected ? '#1a1a1a' : '#1a1a1a12',
-                              color: isSelected ? '#fff' : '#1a1a1a80',
+                              background: isSelected ? '#b84a2d' : '#b84a2d12',
+                              color: isSelected ? '#fff' : '#b84a2d',
                               transition: 'background 0.25s, color 0.25s'
                             }}>
                               {tag}
@@ -437,7 +437,7 @@ const ContactSection = () => {
                           )}
                           <div style={{
                             width: 30, height: 30, borderRadius: 7,
-                            background: isSelected ? '#1a1a1a' : '#1a1a1a08',
+                            background: isSelected ? '#b84a2d' : '#1a1a1a08',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
                             transition: 'background 0.25s'
                           }}>
@@ -446,7 +446,7 @@ const ContactSection = () => {
                           <div>
                             <p style={{
                               margin: 0, fontSize: '0.78rem', fontWeight: 600,
-                              color: isSelected ? '#1a1a1a' : '#1a1a1a80',
+                              color: isSelected ? '#b84a2d' : '#1a1a1a80',
                               transition: 'color 0.25s', lineHeight: 1.3
                             }}>
                               {label}
@@ -470,7 +470,7 @@ const ContactSection = () => {
                     display: 'block', marginBottom: 10,
                     fontSize: '0.62rem', fontWeight: 700,
                     letterSpacing: '0.22em', textTransform: 'uppercase',
-                    color: focused === 'message' ? '#1a1a1a' : '#1a1a1a60',
+                    color: focused === 'message' ? '#b84a2d' : '#1a1a1a60',
                     transition: 'color 0.2s'
                   }}>
                     Tell us about the project
@@ -485,7 +485,7 @@ const ContactSection = () => {
                     style={{
                       width: '100%', boxSizing: 'border-box',
                       background: '#1a1a1a03',
-                      border: `1px solid ${focused === 'message' ? '#1a1a1a40' : '#1a1a1a14'}`,
+                      border: `1px solid ${focused === 'message' ? '#b84a2d' : '#1a1a1a14'}`,
                       borderRadius: 10, padding: '14px 16px',
                       fontSize: '0.95rem', fontWeight: 300,
                       color: '#1a1a1a', outline: 'none',
@@ -524,7 +524,7 @@ const ContactSection = () => {
                       variants={{ hover: { x: 0 }, initial: { x: '-101%' } }}
                       initial="initial"
                       transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                      style={{ position: 'absolute', inset: 0, background: '#333', zIndex: 0 }}
+                      style={{ position: 'absolute', inset: 0, background: '#b84a2d', zIndex: 0 }}
                     />
                     <span style={{
                       position: 'relative', zIndex: 1,

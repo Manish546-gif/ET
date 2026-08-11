@@ -100,8 +100,8 @@ const AccordionItem = ({ item, isOpen, onClick, index }) => (
         transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
         style={{
           width: 32, height: 32, borderRadius: '50%', flexShrink: 0,
-          border: isOpen ? '1px solid #1a1a1a' : '1px solid #1a1a1a18',
-          background: isOpen ? '#1a1a1a' : 'transparent',
+          border: isOpen ? '1px solid #b84a2d' : '1px solid #1a1a1a18',
+          background: isOpen ? '#b84a2d' : 'transparent',
           color: isOpen ? '#fff' : '#1a1a1a70',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           transition: 'background 0.25s, border-color 0.25s, color 0.25s',
@@ -199,7 +199,7 @@ const WorkAccordion = () => {
                 margin: '0 0 16px',
                 fontSize: '0.6rem', fontWeight: 700,
                 letterSpacing: '0.28em', textTransform: 'uppercase',
-                color: '#1a1a1a45',
+                color: '#b84a2d',
               }}
             >
               Still curious?
@@ -226,7 +226,7 @@ const WorkAccordion = () => {
                   transition={{ duration: 0.9, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
                   style={{
                     position: 'absolute', bottom: 4, left: 0, right: 0,
-                    height: 3, background: '#1a1a1a', transformOrigin: 'left',
+                    height: 3, background: '#b84a2d', transformOrigin: 'left',
                   }}
                 />
               </span>
@@ -272,7 +272,7 @@ const WorkAccordion = () => {
                   variants={{ hover: { x: 0 }, initial: { x: '-101%' } }}
                   initial="initial"
                   transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                  style={{ position: 'absolute', inset: 0, background: '#2d2d2d', zIndex: 0 }}
+                  style={{ position: 'absolute', inset: 0, background: '#b84a2d', zIndex: 0 }}
                 />
                 <span style={{ position: 'relative', zIndex: 1 }}>Still have questions?</span>
                 <motion.span
