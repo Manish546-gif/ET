@@ -3,10 +3,9 @@ import { motion, useInView } from 'framer-motion'
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 const SOCIAL_LINKS = [
-  { name: 'Instagram',   url: '#' },
-  { name: 'Twitter / X', url: '#' },
-  { name: 'LinkedIn',    url: '#' },
-  { name: 'Dribbble',   url: '#' },
+  { name: 'Instagram',   url: 'https://www.instagram.com/ellisiumtechnologies/' },
+  { name: 'Twitter / X', url: 'https://twitter.com/ellisiumtech' },
+  { name: 'LinkedIn',    url: 'https://www.linkedin.com/in/ellisium-technologies-90739b418/' },
 ]
 
 const NAV_LINKS      = ['Home', 'Work', 'About', 'Contact']
@@ -223,8 +222,8 @@ const MainGrid = ({ isInView, isMobile }) => (
         <UnderlineLink href="mailto:ellisiumtechnologies@gmail.com">
           ellisiumtechnologies@gmail.com
         </UnderlineLink>
-        <UnderlineLink href="tel:+11234567890">
-          +1 (123) 456-7890
+        <UnderlineLink href="tel:+917070173507">
+          +91 7070173507
         </UnderlineLink>
         <div style={{
           marginTop: 8,
@@ -249,7 +248,7 @@ const MainGrid = ({ isInView, isMobile }) => (
             margin: 0, fontSize: '0.78rem', fontWeight: 300,
             color: '#1a1a1a55', lineHeight: 1.65,
           }}>
-            Based in New York.<br />Working worldwide.
+            Based in India.<br />Working worldwide.
           </p>
         </div>
       </div>

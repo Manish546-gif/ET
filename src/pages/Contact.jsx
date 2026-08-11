@@ -111,15 +111,15 @@ const ContactSection = () => {
     e.preventDefault()
     try {
       await emailjs.send(
-        'service_ym0517p',
-        'template_8qq6a7d',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: formData.name,
           email: formData.email,
           service: formData.service,
           message: formData.message,
         },
-        'm0LO3c2hGygPk_7Ol'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       setSubmitted(true)
     } catch (err) {

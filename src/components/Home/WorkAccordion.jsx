@@ -290,32 +290,7 @@ const WorkAccordion = () => {
             </motion.div>
 
             {/* Decorative count */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              style={{
-                marginTop: 60,
-                display: 'flex', alignItems: 'center', gap: 10,
-              }}
-            >
-              <span style={{
-                fontSize: '2.5rem', fontWeight: 700,
-                fontFamily: "'Georgia', serif",
-                color: '#1a1a1a', letterSpacing: '-0.04em',
-                lineHeight: 1,
-              }}>
-                {String(faqItems.length).padStart(2, '0')}
-              </span>
-              <span style={{
-                fontSize: '0.68rem', fontWeight: 500,
-                color: '#1a1a1a40', letterSpacing: '0.1em',
-                textTransform: 'uppercase', lineHeight: 1.4,
-              }}>
-                questions<br />answered
-              </span>
-            </motion.div>
-          </div>
+            </div>
 
           {/* ── Right / Accordion ── */}
           <motion.div

@@ -377,4 +377,6 @@ export default function LandingPage({ isReady }) {
       </main>
     </MotionConfig>
   );
+
+  
 }

@@ -325,7 +325,7 @@ export default function ProjectShowcase() {
             className="pointer-events-none absolute select-none"
             style={{
               top: '14%', left: '5vw',
-              fontFamily: '"Germania One", serif',
+              fontFamily: '"Passion", serif',
               fontSize: 'clamp(140px, 22vw, 280px)',
               lineHeight: 1,
               color: 'transparent',
@@ -342,7 +342,7 @@ export default function ProjectShowcase() {
             className="relative z-10"
             style={{
               display: 'flex', flexWrap: 'wrap',
-              fontFamily: '"Germania One", serif',
+              fontFamily: '"Passion", serif',
               fontSize: 'clamp(36px, 5.5vw, 76px)',
               lineHeight: 0.95, letterSpacing: '-0.02em',
               color: panelTextColor, perspective: 400,
